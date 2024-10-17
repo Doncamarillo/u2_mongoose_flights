@@ -8,7 +8,7 @@ const flightSchema = new Schema (
         numberOfSeats: {type: Number, required: true},
         departingAirport: {type: Schema.Types.ObjectId, ref: 'airport_id'},
         arrivalAirport: {type: Schema.Types.ObjectId, ref:'airport_id'},
-        departureDataTime: {type: Number, required: true}
+        departureDateTime: {type: Number, required: true}
     },
     {timestamps: true}
 )
